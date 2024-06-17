@@ -6,9 +6,11 @@ for (let i = 0; i < width; i++) {
 }
 
 let shipPos = getRandomNumber(0, width - shipSize);
-for(let i = shipPos; i < shipPos + shipSize; i++){
+(function generateShip() {
+  for (let i = shipPos; i < shipPos + shipSize; i++) {
     pos[i] = true;
-}
+  }
+})();
 
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
