@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Game - Battle Ship</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-title"><h1>BATTLESHIP</h1></div>
+      <div class="radar">
+        <button class="cell hidden-cell" id="c0" value="0"></button>
+        <button class="cell hidden-cell" id="c1" value="1"></button>
+        <button class="cell hidden-cell" id="c2" value="2"></button>
+        <button class="cell hidden-cell" id="c3" value="3"></button>
+        <button class="cell hidden-cell" id="c4" value="4"></button>
+        <button class="cell hidden-cell" id="c5" value="5"></button>
+        <button class="cell hidden-cell" id="c6" value="6"></button>
+      </div>
+      <div class="score">HIT: <span id="myScore" value="0">0</span></div>
+      <br />
+      <button onclick="replay()">RESTART GAME</button>
+    </div>
+    
+    
+  </body>
+  <script src="script2.js"></script>
+</html>
+
+<!-- 
+function choosePos(cell) {
+      const value = cell.value;
+      if (pos[value] == true) {
+        score++;
+        pos[value] = false;
+        cell.setAttribute("class", "spotted-cell cell");
+        cell.setAttribute("disabled", "true");
+        alert("Hit");
+      } else {
+        cell.setAttribute("class", "missed-cell cell");
+        cell.setAttribute("disabled", "true");
+        alert("Miss");
+      }
+    }
+-->
